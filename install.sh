@@ -28,4 +28,4 @@ echo -e "\n## Installing tools"
 cd ~/esp
 
 # install esp adf
-git clone --recursive $URL_ESP_ADF
+git clone  --recursive https://github.com/espressif/esp-adf.git
