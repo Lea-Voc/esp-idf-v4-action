@@ -1,4 +1,4 @@
-# ESP-IDF v4.x installer
+# ESP-IDF v4.2 and ESP-ADF installer
 
 GitHub Action to install **Espressif IoT Development Framework v4.2** and **Espressif Audio Development Framework** for building ESP32 code.
 
