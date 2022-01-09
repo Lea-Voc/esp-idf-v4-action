@@ -1,7 +1,5 @@
 #!/bin/bash
 
-esp_idf_version="$1"
-
 echo -e "\n## Installing prerequisites"
 
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata
@@ -12,9 +10,9 @@ mkdir ~/esp
 
 # install esp idf
 cd ~/esp
-git clone --recursive https://github.com/espressif/esp-idf.git
+git clone -b v4.3.2 --recursive https://github.com/espressif/esp-idf.git
 cd ~/esp/esp-idf
-./install.sh
+./install.sh > ~/esp-idf-install.log 2>&1
 
 # install esp adf
 cd ~/esp
